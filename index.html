@@ -11,20 +11,29 @@
 
 <body>
     <header class="header">
+        <div class="logo">
+            <img src="assets/img/reloj-logo.png" alt="logo trinity">
+        </div>
+        <label for="toggle-menu">
+            <img src="assets/img/menu.png" id="menu" alt="menu hamburguesa">
+        </label>
+        <input type="checkbox" id="toggle-menu">
         <nav class="nav">
             <ul class="navbar-list">
                 <li><a href="#nosotros">nosotros</a></li>
 
                 <li><a href="#comprar">comprar</a></li>
                 <li><a href="#contacto">contacto</a></li>
+
+
+
+
                 <li><a href="registro.html" id="registro">registro</a></li>
                 <li><a href="login.html" id="login">login</a></li>
             </ul>
 
         </nav>
-        <div class="logo">
-            <img src="assets/img/reloj-logo.png" alt="logo trinity">
-        </div>
+
 
     </header>
 
@@ -87,8 +96,10 @@
                     <input type="text" placeholder="apelido" id="apellido">
                     <label for="email">Email:</label>
                     <input type="mail" id="email" placeholder="mail" required>
-                    <label for="consulta">consulta:</label>
-                    <input type="text" id="consulta">
+                    <div class="consul">
+                        <label for="consulta">consulta:</label>
+                        <textarea name="message" id="consulta" cols="30" rows="10"></textarea>
+                    </div>
                 </div>
                 <div class="contact">
                     <iframe
